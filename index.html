@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="UTF-8">
+<title>Labyrint zločinu: Milénium</title>
+
+<style>
+body {
+  margin:0;
+  font-family: Arial, sans-serif;
+  background:
+    radial-gradient(circle at top, rgba(0,90,120,0.35), transparent 35%),
+    linear-gradient(135deg, #050b12, #0b1620 45%, #050505);
+  color:#e8f1f5;
+  min-height:100vh;
+}
+
+.topbar {
+  height:72px;
+  background:#07111b;
+  border-bottom:1px solid #1e5b70;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:0 32px;
+  box-shadow:0 2px 20px rgba(0,0,0,0.5);
+}
+
+.logo {
+  font-size:22px;
+  font-weight:bold;
+  letter-spacing:2px;
+  color:#8ee7ff;
+}
+
+.status {
+  background:#102b1f;
+  color:#7dff9b;
+  padding:8px 14px;
+  border-radius:20px;
+  font-size:13px;
+  border:1px solid #2ed36d;
+}
+
+.container {
+  max-width:1120px;
+  margin:45px auto;
+  padding:0 24px;
+}
+
+.case-card {
+  background:rgba(10,20,30,0.92);
+  border:1px solid #25576a;
+  border-radius:14px;
+  box-shadow:0 0 35px rgba(0,180,220,0.16);
+  overflow:hidden;
+}
+
+.case-header {
+  padding:28px 34px;
+  border-bottom:1px solid #244b5d;
+  background:linear-gradient(90deg, #0d2433, #111);
+}
+
+.case-header h1 {
+  margin:0;
+  font-size:38px;
+  letter-spacing:3px;
+}
+
+.case-header p {
+  margin:10px 0 0;
+  color:#a8c4cf;
+  font-size:16px;
+}
+
+.content {
+  padding:32px 34px;
+  display:grid;
+  grid-template-columns:1.2fr 0.8fr;
+  gap:28px;
+}
+
+.video-box {
+  background:#000;
+  border-radius:12px;
+  overflow:hidden;
+  border:1px solid #294f5c;
+  box-shadow:0 0 20px rgba(0,0,0,0.5);
+}
+
+.video-box iframe {
+  width:100%;
+  height:360px;
+  border:0;
+}
+
+.panel {
+  background:#0c1822;
+  border:1px solid #1f4555;
+  border-radius:12px;
+  padding:24px;
+}
+
+.panel h2 {
+  margin-top:0;
+  color:#8ee7ff;
+}
+
+.warning {
+  background:#2b2605;
+  color:#ffe45c;
+  border-left:5px solid #ffe100;
+  padding:14px 16px;
+  border-radius:6px;
+  margin:18px 0;
+  font-weight:bold;
+}
+
+ul {
+  line-height:1.8;
+  padding-left:22px;
+}
+
+.actions {
+  padding:0 34px 34px;
+  display:flex;
+  justify-content:center;
+}
+
+.start-button {
+  background:linear-gradient(180deg, #ffe45c, #f3b400);
+  color:#111;
+  padding:18px 44px;
+  border-radius:40px;
+  font-size:22px;
+  font-weight:bold;
+  text-decoration:none;
+  box-shadow:0 8px 20px rgba(255,200,0,0.25);
+}
+
+.start-button:hover {
+  filter:brightness(1.08);
+}
+
+.footer {
+  height:34px;
+  background:#061018;
+  border-top:1px solid #244b5d;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:0 18px;
+  font-size:13px;
+  color:#9fb8c2;
+}
+
+.footer .green {
+  color:#7dff9b;
+}
+
+@media (max-width:900px) {
+  .content {
+    grid-template-columns:1fr;
+  }
+
+  .video-box iframe {
+    height:280px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div class="topbar">
+  <div class="logo">IS ARGUS 2.0 / LABYRINT ZLOČINU</div>
+  <div class="status">SYSTÉM AKTIVNÍ</div>
+</div>
+
+<div class="container">
+
+<div class="case-card">
+
+  <div class="case-header">
+    <h1>LABYRINT ZLOČINU: MILÉNIUM</h1>
+    <p>Interní vyšetřovací systém — přístup pouze pro autorizované vyšetřovatele</p>
+  </div>
+
+  <div class="content">
+
+    <div class="video-box">
+      <iframe src="https://www.youtube.com/embed/VIDEO_ID" allowfullscreen></iframe>
+    </div>
+
+    <div class="panel">
+      <h2>Instrukce k případu</h2>
+
+      <div class="warning">
+        Nepřeskakujte jednotlivé části vyšetřování.
+      </div>
+
+      <ul>
+        <li>Nejprve zhlédněte briefing k případu.</li>
+        <li>Poté otevřete materiály mimo 1. desku.</li>
+        <li>Postupujte podle čísel a jednotlivých desek.</li>
+        <li>Stránky označené STOP otevírejte pouze na výzvu systému.</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="actions">
+    <a href="index.html" class="start-button">Zahájit vyšetřování</a>
+  </div>
+
+  <div class="footer">
+    <span>Režim: POLICEJNÍ VYŠETŘOVATEL</span>
+    <span>Případ: LZ-MILENIUM-OPERACE_SCYLLA</span>
+    <span class="green">Stav: ČEKÁ SE NA SPUŠTĚNÍ</span>
+  </div>
+
+</div>
+
+</div>
+
+</body>
+</html>
