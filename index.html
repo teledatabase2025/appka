@@ -7,7 +7,6 @@
 <title>Případ HRS-25547954/2026</title>
 
 <style>
-
 html,
 body{
   margin:0;
@@ -28,11 +27,11 @@ body{
 
   display:flex;
   flex-direction:column;
+
+  overflow:auto;
 }
 
-/* =========================
-   TOP BAR
-========================= */
+/* TOP BAR */
 
 .topbar{
   height:72px;
@@ -55,7 +54,6 @@ body{
   font-size:22px;
   font-weight:bold;
   letter-spacing:2px;
-
   color:#8ee7ff;
 }
 
@@ -66,15 +64,12 @@ body{
   padding:8px 14px;
 
   border-radius:20px;
-
   font-size:13px;
 
   border:1px solid #2ed36d;
 }
 
-/* =========================
-   MAIN
-========================= */
+/* MAIN */
 
 .container{
   flex:1;
@@ -103,13 +98,9 @@ body{
   box-shadow:0 0 35px rgba(0,180,220,0.16);
 
   overflow:hidden;
-
-  max-height:calc(100vh - 110px);
 }
 
-/* =========================
-   HEADER
-========================= */
+/* HEADER */
 
 .case-header{
   padding:22px 30px;
@@ -135,9 +126,7 @@ body{
   font-size:15px;
 }
 
-/* =========================
-   CONTENT
-========================= */
+/* CONTENT */
 
 .content{
   padding:22px 26px;
@@ -150,9 +139,7 @@ body{
   flex:1;
 }
 
-/* =========================
-   VIDEO
-========================= */
+/* VIDEO */
 
 .video-box{
   background:#000;
@@ -173,9 +160,7 @@ body{
   border:0;
 }
 
-/* =========================
-   PANEL
-========================= */
+/* PANEL */
 
 .panel{
   background:#0c1822;
@@ -211,9 +196,7 @@ ul{
   padding-left:22px;
 }
 
-/* =========================
-   BUTTON
-========================= */
+/* BUTTON */
 
 .actions{
   padding:0 26px 24px;
@@ -248,9 +231,7 @@ ul{
   transform:translateY(-2px);
 }
 
-/* =========================
-   FOOTER
-========================= */
+/* FOOTER */
 
 .footer{
   height:34px;
@@ -275,9 +256,7 @@ ul{
   color:#7dff9b;
 }
 
-/* =========================================================
-   DESKTOP ONLY
-========================================================= */
+/* DESKTOP */
 
 @media (min-width:901px){
 
@@ -285,11 +264,13 @@ ul{
     overflow:hidden;
   }
 
+  .case-card{
+    max-height:calc(100vh - 110px);
+  }
+
 }
 
-/* =========================================================
-   MOBILE VERSION
-========================================================= */
+/* MOBILE */
 
 @media (max-width:900px){
 
@@ -377,22 +358,30 @@ ul{
   }
 
   .footer{
-    height:auto;
+    height:42px;
 
-    flex-direction:column;
-    align-items:flex-start;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+    padding:0 10px;
+
+    font-size:9px;
 
     gap:6px;
 
-    padding:14px 16px;
+    overflow:hidden;
 
-    font-size:12px;
+    text-transform:uppercase;
+    letter-spacing:1px;
+  }
+
+  .footer span{
+    white-space:nowrap;
   }
 }
 
-/* =========================================================
-   EXTRA SMALL PHONES
-========================================================= */
+/* EXTRA SMALL PHONES */
 
 @media (max-width:480px){
 
@@ -411,64 +400,40 @@ ul{
   .start-button{
     font-size:18px;
   }
-}
 
+  .footer{
+    font-size:8px;
+  }
+}
 </style>
 </head>
 
 <body>
 
-<!-- TOP -->
-
 <div class="topbar">
-
-  <div class="logo">
-    PATRACKA.CZ / Interní systém O.R.I.O.N.
-  </div>
-
-  <div class="status">
-    SYSTÉM AKTIVNÍ
-  </div>
-
+  <div class="logo">PATRACKA.CZ / Interní systém O.R.I.O.N.</div>
+  <div class="status">SYSTÉM AKTIVNÍ</div>
 </div>
-
-<!-- MAIN -->
 
 <div class="container">
 
   <div class="case-card">
 
-    <!-- HEADER -->
-
     <div class="case-header">
-
       <h1>ŠEPOTY STROMŮ</h1>
-
-      <p>
-        Interní vyšetřovací systém — přístup pouze pro autorizované vyšetřovatele
-      </p>
-
+      <p>Interní vyšetřovací systém — přístup pouze pro autorizované vyšetřovatele</p>
     </div>
-
-    <!-- CONTENT -->
 
     <div class="content">
 
-      <!-- VIDEO -->
-
       <div class="video-box">
-
         <iframe
           src="https://www.youtube.com/embed/LmaG4d0O9Gg"
           allowfullscreen>
         </iframe>
-
       </div>
 
-      <!-- PANEL -->
-
       <div class="panel">
-
         <h2>Instrukce k případu</h2>
 
         <div class="warning">
@@ -481,22 +446,15 @@ ul{
           <li>Postupujte podle čísel a jednotlivých desek.</li>
           <li>Stránky označené STOP otevírejte pouze na výzvu systému.</li>
         </ul>
-
       </div>
 
     </div>
 
-    <!-- BUTTON -->
-
     <div class="actions">
-
-      <a href="index2.html" class="start-button">
+      <a href="index.html" class="start-button">
         Zahájit vyšetřování
       </a>
-
     </div>
-
-    <!-- FOOTER -->
 
     <div class="footer">
       <span>Režim: DETEKTIV</span>
